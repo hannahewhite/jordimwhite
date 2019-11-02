@@ -1,0 +1,13 @@
+@import url("https://use.typekit.net/tmn8ecm.css");
+
+@mixin font-acumin($color) {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $color;
+}
+
+$font-sm: 24px;
+$font-md: 42px;
+$font-lg: 56px;
+$font-xl: 84px;
