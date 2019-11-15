@@ -47,7 +47,7 @@
         navOneTxt="Work"
         anchorOne="#work">
       </Nav>
-      <p>hello, i’m jordi — i make music tings.</p>
+      <p>hello, i’m jordi — i make musical things.</p>
       <p>let’s create.</p>
       <p>hit me up — <a href="mailto:jordi.white1@gmail.com">jordi.white1@gmail.com</a></p>
       <img src="@/assets/images/jordi-profile.png" alt="Jordi White Profile Image">
@@ -149,6 +149,10 @@ h3 {
   
   a {
     text-decoration: none;
+
+    @media screen and (max-width: 540px){
+      font-size: 16px;
+    }
   }
 }
 

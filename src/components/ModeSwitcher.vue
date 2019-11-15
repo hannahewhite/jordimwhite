@@ -1,5 +1,5 @@
 <template>
-    <div class="ModeSwitcher">
+    <div class="ModeSwitcher" :class="{'dark-background' : isDarkMode, 'light-background' : !isDarkMode}">
         <font-awesome-icon @click="darkMode" class="icon" :class="{'selected' : isDarkMode}" :icon="['fas', 'moon']" />
         <font-awesome-icon @click="lightMode" class="icon" :class="{'selected' : !isDarkMode}" :icon="['fas', 'sun']" />
     </div>
@@ -40,6 +40,7 @@
 <style lang="scss" scoped>
 @import "@/assets/global-styles/colors.scss";
 @import "@/assets/global-styles/padding.scss";
+@import "@/assets/global-styles/typography.scss";
 
 .ModeSwitcher {
   position: fixed;
@@ -48,9 +49,16 @@
   padding: $padding-lg;
 
   @media screen and (max-width: 940px) {
-    background-color: $background-dark;
     right: 0;
     z-index: 10;
+
+    &.dark-background {
+        background-color: $background-dark;
+    }
+
+    &.light-background {
+        background-color: $background-light;
+    }
   }
 }
 
@@ -61,6 +69,10 @@
  cursor: pointer;
      &.selected {
         color: $highlight-text;
+    }
+
+    @media screen and (max-width: 540px){
+        font-size: $font-sm;
     }
 }
 </style>

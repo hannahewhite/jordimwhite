@@ -1,29 +1,12 @@
 # jordimwhite
 
-## Project setup
+## Author
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+Hannah White
 ```
 
-### Compiles and minifies for production
+### Tech stack
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+Vue.js — Netlify — SASS — Visual Studio Code — Sketch
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

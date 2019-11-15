@@ -74,7 +74,7 @@
 .nav-bottom {
     bottom: 32px;
     @media screen and (max-width: 540px) {
-        bottom: $padding-lg;
+        bottom: 64px;
     }
 }
 
