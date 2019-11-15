@@ -34,7 +34,7 @@
                 }
             }
         }
-    }
+    };
 </script>
 
 <style lang="scss" scoped>
@@ -43,14 +43,14 @@
 @import "@/assets/global-styles/typography.scss";
 
 .ModeSwitcher {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: $padding-lg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: $padding-lg;
 
-  @media screen and (max-width: 940px) {
-    right: 0;
-    z-index: 10;
+    @media screen and (max-width: 940px) {
+        right: 0;
+        z-index: 10;
 
     &.dark-background {
         background-color: $background-dark;
@@ -59,7 +59,7 @@
     &.light-background {
         background-color: $background-light;
     }
-  }
+    }
 }
 
 .icon {
@@ -72,7 +72,7 @@
     }
 
     @media screen and (max-width: 540px){
-        font-size: $font-sm;
+    font-size: $font-sm;
     }
 }
 </style>

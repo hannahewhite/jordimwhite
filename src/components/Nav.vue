@@ -74,7 +74,9 @@
 .nav-bottom {
     bottom: 32px;
     @media screen and (max-width: 540px) {
-        bottom: 64px;
+        &:first-child {
+            bottom: 160px;
+        }
     }
 }
 
@@ -95,8 +97,7 @@
 .line-two {
     margin-bottom: 60px;
     @media screen and (max-width: 540px) {
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     }
 }
-
 </style>
