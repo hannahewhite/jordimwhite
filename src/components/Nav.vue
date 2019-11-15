@@ -49,6 +49,10 @@
         text-decoration: none;
         @include font-acumin($highlight-text);
         font-size: $font-sm;
+
+        @media screen and (max-width: 540px){
+            font-size: 16px;
+        }
     }
 }
 .nav-section {
@@ -57,6 +61,10 @@
     flex-direction: column;
     align-items: flex-end;
     right: $padding-xl;
+
+    @media screen and (max-width: 540px) {
+        right: $padding-lg;
+    }
 }
 
 .nav-top {
@@ -65,6 +73,9 @@
 
 .nav-bottom {
     bottom: 32px;
+    @media screen and (max-width: 540px) {
+        bottom: $padding-lg;
+    }
 }
 
 
@@ -76,10 +87,16 @@
 
 .line-one {
     margin-top: 60px;
+    @media screen and (max-width: 540px) {
+        margin-top: 20px;
+    }
 }
 
 .line-two {
     margin-bottom: 60px;
+    @media screen and (max-width: 540px) {
+        margin-bottom: 20px;
+    }
 }
 
 </style>

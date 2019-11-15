@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import VueScrollTo from 'vue-scrollto';
+import VueScrollReveal from 'vue-scroll-reveal';
+import VueMq from 'vue-mq'
+
 
 // FontAwesome
 library.add(faSun, faMoon);
@@ -24,6 +27,25 @@ Vue.use(VueScrollTo, {
   onCancel: false,
   x: false,
   y: true
+});
+
+// ScrollReveal
+Vue.use(VueScrollReveal, {
+  class: 'v-scroll-reveal',
+  duration: 1500,
+  scale: 1,
+  distance: '0px',
+  mobile: false,
+  viewFactor: 0.3
+});
+
+// MediaQuery
+Vue.use(VueMq, {
+  breakpoints: { 
+    sm: 540,
+    md: 1250,
+    lg: Infinity,
+  }
 });
 
 Vue.config.productionTip = false

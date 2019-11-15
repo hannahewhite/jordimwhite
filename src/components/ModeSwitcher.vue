@@ -43,8 +43,15 @@
 
 .ModeSwitcher {
   position: fixed;
-  top: $padding-lg;
-  left: $padding-lg;
+  top: 0;
+  left: 0;
+  padding: $padding-lg;
+
+  @media screen and (max-width: 940px) {
+    background-color: $background-dark;
+    right: 0;
+    z-index: 10;
+  }
 }
 
 .icon {
