@@ -83,6 +83,9 @@
     width: 2px;
     height: 200px;
     background-color: $gray-text;
+    @media screen and (max-width: 540px){
+        height: 120px;
+    }
 }
 
 .line-one {
