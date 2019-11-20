@@ -74,9 +74,7 @@
 .nav-bottom {
     bottom: 32px;
     @media screen and (max-width: 540px) {
-        &:first-child {
-            bottom: 160px;
-        }
+        bottom: 160px;
     }
 }
 
