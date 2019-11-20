@@ -43,8 +43,9 @@ Vue.use(VueScrollReveal, {
 Vue.use(VueMq, {
   breakpoints: { 
     sm: 540,
-    md: 1250,
-    lg: Infinity,
+    md: 690,
+    lg: 1250,
+    xl: Infinity,
   }
 });
 
