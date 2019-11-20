@@ -200,8 +200,10 @@ h3 {
     word-spacing: 8px;
   }
 
-  .artists {
-    margin-top: 5%;
+  @media screen and (min-width: 541px){
+    .artists {
+      margin-top: 5%;
+    }
   }
 
   .all-credits {

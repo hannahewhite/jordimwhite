@@ -7,8 +7,15 @@
 <style lang="scss">
 @import "@/assets/global-styles/colors.scss";
 
-body {
-  background-color: $background-dark;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $background-dark;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: $background-light;
+  }
 }
 
 #app {
