@@ -35,6 +35,10 @@
       <br>
       <a v-if="!isMobile" href="https://open.spotify.com/track/2OhmkpVpUhIsrcRHhRFb5F?si=Ag6-kGHmRcyjrPrwil1RBQ" target="_blank">ben potter</a><span class="divider"> — </span>
       <a v-if="!isMobile" href="https://open.spotify.com/album/0IQnDmf1Shg68pvftBggsK?si=GCsviAAUTlSvpCCE-A3RfQ" target="_blank">mitch mcdonough</a>
+      <br>
+      <span v-if="!isMobile" target="_blank">vendulka</span><span class="divider"> — </span>
+      <span v-if="!isMobile" target="_blank">sameland</span><span class="divider"> — </span>
+      <span v-if="!isMobile" target="_blank">cameron jones</span>
       </div>
       <div class="all-credits">
         <span> — </span><a href="https://open.spotify.com/playlist/6aMK2pcfAUmYQbPYY30zT6?si=_UIDEQxiQnK3aHmoU2r9_Q" target="_blank">all credits</a>
@@ -162,7 +166,7 @@ h3 {
 }
 
 .work {
-  a, span {
+  a, span, p {
     font-size: 36px;
     line-height: 86px;
     
@@ -181,8 +185,12 @@ h3 {
     word-spacing: 8px;
   }
 
+  .artists {
+    margin-top: 5%;
+  }
+
   .all-credits {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .divider {
