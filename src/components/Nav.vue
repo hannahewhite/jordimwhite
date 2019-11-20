@@ -74,7 +74,7 @@
 .nav-bottom {
     bottom: 32px;
     @media screen and (max-width: 540px) {
-        bottom: 160px;
+        bottom: 140px;
     }
 }
 
