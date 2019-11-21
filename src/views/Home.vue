@@ -25,25 +25,25 @@
         anchorTwo="#about">
       </Nav>
       <div class="artists">
-      <a href="https://open.spotify.com/artist/6nLgwDHaapTa9mAho85nuu?si=W3RKrqlfQnyKFnKBpbHu1Q" target="_blank">old cities</a><span class="divider"> — </span>
-      <a href="https://open.spotify.com/artist/3r4Jr4h2Fq8LswYbPLxnZ7?si=fjeol1mLQBiWcu2xmYa8Jw" target="_blank">laura hyde</a><span class="divider" v-if="!isSmallScreen"> — </span>
+      <a href="https://open.spotify.com/artist/6nLgwDHaapTa9mAho85nuu?si=W3RKrqlfQnyKFnKBpbHu1Q" target="_blank">old cities</a><span class="divider" v-if="!isMobile"> — </span>
+      <a href="https://open.spotify.com/artist/3r4Jr4h2Fq8LswYbPLxnZ7?si=fjeol1mLQBiWcu2xmYa8Jw" target="_blank">laura hyde</a><span class="divider" v-if="!isSmallScreen && !isMobile"> — </span>
       <br v-if="isSmallScreen">
       <a href="https://open.spotify.com/track/5zWYKxbP2AeyWxjU7cOuVa?si=xUqJGrkEQIKPlor4EHhEdA" target="_blank">lucy mason</a><span class="divider" v-if="isSmallScreen"> — </span>
       <br v-if="!isMobile && !isSmallScreen">
-      <a href="https://open.spotify.com/album/5v4hVxSmc5us9F9sLco63e?si=duFyMgSjTM2ruHmtvBKE8g" target="_blank">trent williams</a><span v-if="!isSmallScreen" class="divider"> — </span>
+      <a href="https://open.spotify.com/album/5v4hVxSmc5us9F9sLco63e?si=duFyMgSjTM2ruHmtvBKE8g" target="_blank">trent williams</a><span v-if="!isSmallScreen && !isMobile" class="divider"> — </span>
       <br v-if="isSmallScreen">
-      <a href="https://open.spotify.com/track/281IVuT5bJsBCevB1u22cY?si=HJukBG_NRc6-88zS2dMfNg" target="_blank">cap carter</a><span class=" divider"> — </span>
-      <a href="https://open.spotify.com/album/1Z4Nd7f6FXwDjhijAQwAgY?si=xaaJZn-KTyehw2QqTR1FuQ" target="_blank">c3 music</a>
+      <a href="https://open.spotify.com/track/281IVuT5bJsBCevB1u22cY?si=HJukBG_NRc6-88zS2dMfNg" target="_blank">cap carter</a><span v-if="!isMobile" class="divider"> — </span>
+      <a v-if="!isMobile" href="https://open.spotify.com/album/1Z4Nd7f6FXwDjhijAQwAgY?si=xaaJZn-KTyehw2QqTR1FuQ" target="_blank">c3 music</a>
       <br v-if="isSmallScreen">
       <br v-if="!isMobile && !isSmallScreen">
-      <a v-if="!isMobile" href="https://open.spotify.com/track/2OhmkpVpUhIsrcRHhRFb5F?si=Ag6-kGHmRcyjrPrwil1RBQ" target="_blank">ben potter</a><span class="divider"> — </span>
-      <a href="https://open.spotify.com/album/0IQnDmf1Shg68pvftBggsK?si=GCsviAAUTlSvpCCE-A3RfQ" target="_blank">mitch mcdonough</a><span v-if="!isSmallScreen" class="divider"> — </span>
+      <a v-if="!isMobile" href="https://open.spotify.com/track/2OhmkpVpUhIsrcRHhRFb5F?si=Ag6-kGHmRcyjrPrwil1RBQ" target="_blank">ben potter</a><span class="divider" v-if="!isMobile"> — </span>
+      <a href="https://open.spotify.com/album/0IQnDmf1Shg68pvftBggsK?si=GCsviAAUTlSvpCCE-A3RfQ" target="_blank">mitch mcdonough</a><span v-if="!isSmallScreen && !isMobile" class="divider"> — </span>
       <br v-if="isSmallScreen">
       <span>rg & co</span><span class="divider" v-if="isSmallScreen"> — </span>
       <br v-if="!isMobile && !isSmallScreen">
-      <span>vendulka</span><span v-if="!isSmallScreen" class="divider"> — </span>
+      <span>vendulka</span><span v-if="!isSmallScreen && !isMobile" class="divider"> — </span>
       <br v-if="isSmallScreen">
-      <span>sameland</span><span class="divider"> — </span>
+      <span>sameland</span><span class="divider" v-if="!isMobile"> — </span>
       <span v-if="!isMobile">cameron jones</span>
       </div>
       <div class="all-credits">
@@ -211,9 +211,9 @@ h3 {
   }
 
   .divider {
-    @media screen and (max-width: 540px) {
-      display: none;
-    }
+    // @media screen and (max-width: 540px) {
+    //   display: none;
+    // }
   }
 }
 
