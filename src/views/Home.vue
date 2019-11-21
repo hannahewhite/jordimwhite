@@ -152,6 +152,10 @@ h3 {
   padding: $padding-lg;
   z-index: 10;
 
+  @media screen and (max-width: 540px){
+    line-height: 18px;
+  }
+
   &.dark-background {
     background-color: $background-dark;
   }
@@ -208,12 +212,6 @@ h3 {
 
   .all-credits {
     margin-top: 5%;
-  }
-
-  .divider {
-    // @media screen and (max-width: 540px) {
-    //   display: none;
-    // }
   }
 }
 
