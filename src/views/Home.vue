@@ -176,6 +176,10 @@ h3 {
 .emoji {
   font-size: 72px;
   margin-top: 48px;
+
+  @media screen and (max-width: 540px){
+    font-size: 42px;
+  }
 }
 
 .work {
