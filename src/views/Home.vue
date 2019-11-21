@@ -124,6 +124,7 @@ h1 {
 
   @media screen and (max-width: 540px){
     font-size: $font-lg-mobile;
+    margin: 0 0 $padding-lg 0;
   }
 }
 
