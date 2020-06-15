@@ -39,11 +39,11 @@
       <a v-if="!isMobile" href="https://open.spotify.com/track/2OhmkpVpUhIsrcRHhRFb5F?si=Ag6-kGHmRcyjrPrwil1RBQ" target="_blank">ben potter</a><span class="divider" v-if="!isMobile"> — </span>
       <a href="https://open.spotify.com/album/0IQnDmf1Shg68pvftBggsK?si=GCsviAAUTlSvpCCE-A3RfQ" target="_blank">mitch mcdonough</a><span v-if="!isSmallScreen && !isMobile" class="divider"> — </span>
       <br v-if="isSmallScreen">
-      <span>rg & co</span><span class="divider" v-if="isSmallScreen"> — </span>
+      <a href="https://open.spotify.com/artist/7LqQuuU89M6lShf8oB1vac?si=GExFlO1LQgyJHXMsJ_pT0w" target="_blank">ryan gilpin & co</a><span class="divider" v-if="isSmallScreen"> — </span>
       <br v-if="!isMobile && !isSmallScreen">
-      <span>vendulka</span><span v-if="!isSmallScreen && !isMobile" class="divider"> — </span>
+      <a href="https://open.spotify.com/artist/2Mgm4AwTZRFzZV0Dc3MI3n?si=p7dakKIHQkWv1mjETkrqqQ" target="_blank">aya yves</a><span v-if="!isSmallScreen && !isMobile" class="divider"> — </span>
       <br v-if="isSmallScreen">
-      <span>sameland</span><span class="divider" v-if="!isMobile"> — </span>
+      <a href="https://open.spotify.com/artist/4DOl3P641dIt4Ox2fr7H2J?si=Bv3BdUy1Q9WtKhbuBqj6Qg" target="_blank">sameland</a><span class="divider" v-if="!isMobile"> — </span>
       <span v-if="!isMobile">cameron jones</span>
       </div>
       <div class="all-credits">
